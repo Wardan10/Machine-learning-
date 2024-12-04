@@ -15,7 +15,7 @@ import requests
 response=requests.get("https://api.themoviedb.org/3/movie/top_rated?api_key=""")
 # df=pd.read_json(response.json)
 if response.status_code == 200:
-    # json_data.page=2 doubt read more about json       add param page at the quesry with & "https://api.themoviedb.org/3/movie/top_rated?api_key=ac562adae8e0df8787965cf7360126e9?page=x"
+    # json_data.page=2 doubt read more about json       add param page at the quesry with & "https://api.themoviedb.org/3/movie/top_rated?api_key=" "?page=x"
     # Convert JSON data to a DataFrame
     print("pages:",response.json().keys())
     df = pd.DataFrame(response.json()['results'])  # assuming 'results' is the key containing the list of movies
