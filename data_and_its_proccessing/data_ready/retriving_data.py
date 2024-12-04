@@ -7,12 +7,12 @@ import mysql.connector
 mysql.connector.connect(host="localhost")
                                      webscraping
  API -> connects two servers -> data pipeplines 
-first API call from tmdb (movies indo database)   APIKEY->   ac562adae8e0df8787965cf7360126e9
+first API call from tmdb (movies indo database)   APIKEY->   " " 
 REFERENCE   ->   https://developer.themoviedb.org/reference/intro/getting-started
 """
 
 import requests
-response=requests.get("https://api.themoviedb.org/3/movie/top_rated?api_key=ac562adae8e0df8787965cf7360126e9")
+response=requests.get("https://api.themoviedb.org/3/movie/top_rated?api_key=""")
 # df=pd.read_json(response.json)
 if response.status_code == 200:
     # json_data.page=2 doubt read more about json       add param page at the quesry with & "https://api.themoviedb.org/3/movie/top_rated?api_key=ac562adae8e0df8787965cf7360126e9?page=x"
